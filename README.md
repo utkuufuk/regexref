@@ -70,15 +70,6 @@ a{3}            # 3 'a's
 M(r|s|rs)\.?    # 'Mr/Mr./Ms/Ms./Mrs/Mrs.'
 ```
 
-### Matching Results Using Groups
-``` sh
-# TODO: add regex
-https://www.google.com
-http://coreyms.com
-https://youtube.com
-https://www.nasa.gov
-```
-
 ## Programming Languages
 ### JavaScript
 ``` javascript
@@ -88,8 +79,10 @@ const reg2 = new RegExp(/[a-z]/, 'i')
 
 reg1.test("b")  // true
 reg2.test("3")  // false
+```
 
-// mathing groups
+#### Matching Groups
+``` javascript
 const text = "http://www.google.com";
 const regex = /https?://(www\.)?(\w+)(\.\w+)/
 const [whole, www, domain, extension] = text.match(regex)
