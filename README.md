@@ -83,4 +83,9 @@ const reg2 = new RegExp(/[a-z]/, 'i')
 
 reg1.test("b")  // true
 reg2.test("3")  // false
+
+// mathing groups
+const text = "http://www.google.com";
+const regex = /https?://(www\.)?(\w+)(\.\w+)/
+const [whole, www, domain, extension] = text.match(regex)
 ```
