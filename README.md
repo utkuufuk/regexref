@@ -6,8 +6,13 @@
 
 ## Tools
  1. [Online Tool](https://regex101.com/)
- 2. `grep -P "<regex>" <path>`
- 3. `sag "<regex>" <path>`
+
+ 2. ```sh 
+    grep -P "<regex>" <path> # omit leading & trailing '/' from regex
+    ```
+ 3. ```sh
+    sag "<regex>" <path> # omit leading & trailing '/' from regex
+    ```
  4. VS Code: `Ctrl+F > Alt+R`
 
 ## Cheatsheet
